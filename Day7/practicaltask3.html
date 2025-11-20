@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.oil {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.shampoo {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.conditioner {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hair Care Products</h1>
+    <div class="product">
+        <div class="oil">
+            <img src="https://images.hollandandbarrettimages.co.uk/health-hub/2023/m05/what-is-rosemary-oil.png" data-type="sale" alt="Oil" width="200" >
+            <h2>Rosemary Oil</h2>
+            <p class="price" data-price="99.00">$99.00</p>
+            <div class="action">
+                <button data-action="buy">Buy Now</button>
+                <button data-action="wishlist">Add to Wishlist</button>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="shampoo">
+            <img src="https://i5.walmartimages.com/asr/2372063f-4f56-477a-abea-8a546fe84ee0.b1b17c03b9419f602698a9a25f74a5e6.jpeg" data-type="new-arrival" alt="Shampoo" width="200" ><br>
+            <h2>Hair Growth Shampoo</h2>
+            <p class="price" data-price="149.00">$149.00</p>
+            <div class="action">
+                <button data-action="buy">Buy Now</button>
+                <button data-action="wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="conditioner">
+            <img src="https://i5.walmartimages.com/asr/dd63c7bb-b260-4a76-a94b-cb534c9cbf82_1.37c8b7a3ec531e2938181102d0343ecb.jpeg" data-type="bestseller" alt="Conditioner" width="200" ><br>
+            <h2>Nourishing Conditioner</h2>
+            <p class="price" data-price="129.00">$129.00</p>
+            <div class="action">
+                <button data-action="buy">Buy Now</button>
+                <button data-action="wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+    
+</body>
+</html>
