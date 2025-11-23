@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 10px 20px;
+        border-bottom: 2px solid #ccc;
+    }
+    .button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .container {
+        display: flex;
+        height: calc(100vh - 60px);
+    }
+    .sidebar {
+        width: 200px;
+        background-color: #f8f8f8;
+        border-right: 2px solid #ccc;
+        padding: 20px;
+    }
+    .main {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background-color: #e3f2fd;
+        padding: 15px;
+        border: 2px solid #2196f3;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <header>
+        <div>
+            <b>Layout</b>
+        </div>
+        <button class="button">New</button>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Settings</li>
+                    <li>Logout</li>
+             </ul>
+
+            </nav>
+        </aside>
+    <main class="main">
+        <div class="cards">
+          <div class="card">Card 1 — padding and border included in width.</div>
+          <div class="card">Card 2</div>
+          <div class="card">Card 3</div>
+          <div class="card">Card 4</div>
+          <div class="card">Card 5</div>
+          <div class="card">Card 6</div>
+        </div>
+      </main>
+    </div>
+</body>
+</html>
