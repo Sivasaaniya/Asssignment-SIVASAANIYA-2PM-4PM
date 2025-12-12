@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briyani</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+            'header header header header header header'
+            'aside main main main main main'
+            'aside footer footer footer footer footer';
+
+        }
+
+        .container div{
+            background-color: beige;
+            color: rgba(69, 4, 4, 0.788);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .item1{
+            grid-area: header;
+        }
+
+        .item2{
+            grid-area: main;
+        }
+
+        .item3{
+            grid-area: aside;
+        }
+
+        .item4{
+            grid-area: footer;
+        }
+
+        .food{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .img{
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <Header>
+                <h2>Briyani Hunt</h2>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </Header>
+        </div>
+
+        <div class="item2">
+            <main>
+                <h2>Simple recipes made for <i>real, actual, Everyday life</i></h2>
+                <div class="food">
+                    <img src="https://minimalistbaker.com/wp-content/uploads/2023/01/Green-bean-potato-salad-SQUARE-680x680.jpg" alt="salad" class="img aa">
+
+                    <img src="https://bbqhost.com/wp-content/uploads/2024/10/Chicken-Fried-Rice-1.jpg" alt="chicken rice" class="img">
+                    <img src="https://uploads-ssl.webflow.com/5c481361c604e53624138c2f/60f2ea67b471327a1d82959b_chicken%20roll_1500%20x%201200.jpg" alt="chicken roll" class="img">
+                    <img src="https://www.foodandwine.com/thmb/Fl0b6JmtSCdysFALf7GDifp_9Bs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-and-pork-paella-XL-RECIPE0917-b1f698fafe4a494382d775b40d1f7f25.jpg" alt="spanish masala" class="img">
+                    <img src="https://www.spoonforkbacon.com/wp-content/uploads/2023/04/milshake-recipe-card.jpg" alt="shakes" class="img">
+                    <img src="https://img.freepik.com/premium-photo/delicious-trifle-dessert-glasses_140916-21699.jpg" alt="desserts" class="img">
+
+                </div>
+
+            </main>
+        </div>
+
+        <div class="item3">
+            <aside>
+                <h4>Salads</h4>
+                <h4>Veg Items</h4>
+                <h4>Non-Veg Items</h4>
+                <h4>Desserts</h4>
+                <h4>Milkshakes</h4>
+            </aside>
+        </div>
+
+        <div class="item4">
+            <footer>
+                <p>&copyright 2025</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
