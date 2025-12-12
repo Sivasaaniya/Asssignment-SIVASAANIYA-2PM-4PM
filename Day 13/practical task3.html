@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Layout</title>
+    <style>
+        .head{
+            background-color: rgb(87, 83, 83);
+            width:250px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .img{
+            width: 40px;
+            height: 30px;
+        }
+        .chat{
+            border: 2px solid rgb(5, 55, 5);
+            border-radius: 10px;
+            width: 250px;
+            height: 500px;
+            background-color: rgb(230, 222, 222);
+        }
+        .box{
+            width: 250px;
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: flex-start;
+        }
+        .input{
+            height: 20px;
+            width: 50px;
+            display: flex;
+            flex-direction: end;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <header>
+            <div class="head">
+                <img src="https://as2.ftcdn.net/v2/jpg/05/89/93/27/1000_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.jpg" class="img">
+                <h4>Akshi(you)</h4>📞
+            </div>
+        </header>
+        <div class="box">
+            <div class="messages" id="messages">
+            <div class="msg">Hello!</div>
+            <div class="msg">Hey, how are you?</div>
+            <div class="msg">I'm good!</div>
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+
+    </div>
+</body>
+</html>
