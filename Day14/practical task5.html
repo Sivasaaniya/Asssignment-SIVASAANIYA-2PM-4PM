@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .prdt{
+            width: 200px;
+            height: 400px;
+            padding: 20px;
+        }
+        .img{
+            width: 200px;
+            height: 300px;
+        }
+
+        @media (max-width:300px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+        }
+
+        @media (max-width:600px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Foxtale Face Products</h2>
+    <div class="container">
+
+        <div class="prdt">
+            <img src="https://foxtale.in/cdn/shop/files/RAPID-SPOT-REDUCTION.jpg?v=1727950454&width=600" alt="Glow Moisturizer" class="img">
+            <p>$ 299.00</p>
+            <p>Vitamin C Face Wash| Brighter Skin</p>
+
+        </div>
+
+        <div class="prdt">
+            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/30450830/2024/8/22/6748f5d4-e687-4942-80c1-bd537fcc11691724320655695-FoxTale-Nano-Vitamin-C-Niacinamide-Encapsulated-Peptides-Sup-6.jpg" alt="Oil Moisturizer" class="img">
+            <p>$ 499.00</p>
+            <p>Super Glow Moisturizer| De-tan & Glow</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://m.media-amazon.com/images/I/41ysijAKcNL._SX679_.jpg" alt="" class="img">
+            <p>$ 499.00</p>
+            <p>Oil Balancing Moisturizer| Even Skin</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2,q-40/static/img/product/401893/foxtale-true-clarity-oil-and-acne-control-face-wash-150-ml_1_display_1756354714_b983357e.jpg" alt="face wash" class="img">
+            <p>$ 499.00</p>
+            <p>Oil Balancing Facewash| Even Skin</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://cdn.shopify.com/s/files/1/0609/6096/4855/articles/D1B2434E-DBEB-4806-9CA3-89B1D952A4E2.jpg?v=1665995" alt="" class="img">
+            <p>$ 799.00</p>
+            <p>Niacinamide Serum| Fades Darkspots</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://foxtale.in/cdn/shop/files/ACNECONTROLCLEANSER-03.jpg?v=1737968553&width=576" alt="serum" class="img">
+            <p>$ 899.00</p>
+            <p>Retinol Serum| Even Skin</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.im0OmHeYMQG9r_l-UEt13gHaHa?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=474&h=474&rs=1&o=7&rm=3" alt="serum" class="img">
+            <p>$ 499.00</p>
+            <p>Ph Moisturizer| good for all skin type</p>
+        </div>
+
+        <div class="prdt">
+            <img src="https://m.media-amazon.com/images/I/718OR4WvjHL._SL1500_.jpg" alt="face mask" class="img">
+            <p>$ 899.00</p>
+            <p>Detan Face Mask| Even Skin</p>
+        </div>
+    </div>
+</body>
+</html>
