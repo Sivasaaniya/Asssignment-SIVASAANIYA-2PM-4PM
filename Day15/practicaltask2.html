@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 secction service layout</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            text-align: justify;
+            border-radius: 8px;
+            border: 2px solid grey;
+            background-color:whitesmoke ;
+        }
+        .img{
+            width: 50px;
+            height: 50px; 
+        }
+        h2{
+            color: whitesmoke;
+            text-align: center;
+            text-decoration: wavy;
+        }
+
+        @media (max-width:780px) {
+            .container{
+                display: block;
+                gap: 30px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>OUR SERVICES</h2>
+    <div class="container">
+        <div class="box">
+            <center>
+            <img src="https://www.nicepng.com/png/detail/351-3517329_application-development-icon-mobile-application-development-icon.png" alt="Mobile Development" class="img">
+            </center>
+            
+            <h4 style="text-align: center;">Mobile Development</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="box">
+            <center>
+            <img src="https://static.vecteezy.com/system/resources/previews/017/207/552/original/mobility-icon-from-digitalization-collection-simple-line-mobility-icon-for-templates-web-design-vector.jpg" alt="Mobile Development" class="img">
+            </center>
+            <h4 style="text-align: center;">Mobility Services</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="box">
+            <center>
+            <img src="https://png.pngtree.com/png-clipart/20230817/original/pngtree-consulting-icon-vector-icons-management-center-vector-png-image_10441361.png" alt="Mobile Development" class="img">
+            </center>
+            <h4 style="text-align: center;">Software Consulting</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+    </div>
+</body>
+</html>

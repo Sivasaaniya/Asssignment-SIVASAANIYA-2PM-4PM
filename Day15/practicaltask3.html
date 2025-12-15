@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards </title>
+    <style>
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .card{
+            border: 2px solid palevioletred;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            gap: 10px;
+
+        }
+        .button{
+            background-color: rgb(102, 102, 220);
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        @media (max-width:780px) {
+            .cards{
+                display: flex;
+                flex-direction: column;
+            }    
+        }
+
+        @media(max-width:576px) {
+            .cards{
+                display: flex;
+                flex-direction: column;
+            }     
+        }
+
+        @media(max-width:320px) {
+            .cards{
+                display: flex;
+                flex-direction: column;
+            }     
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Pricing Tab</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>$99</p>
+            <button class="button">Get Started</button>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>$199</p>
+            <button class="button">Get Started</button>
+        </div>
+
+        <div>
+            <div class="card">
+            <h3>Advanced</h3>
+            <p>$499</p>
+            <button class="button">Get Started</button>
+        </div>
+
+    </div>
+</body>
+</html>

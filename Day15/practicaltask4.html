@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallary</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            gap: 20px;
+            
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 4px solid whitesmoke;
+        }
+        .img{
+            width: 398px;
+            height: 398px;
+        }
+        @media (max-width:576px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            
+        }
+
+        @media (max-width:320px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Wedding Photography</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/165649656/photo/wedding.jpg?s=612x612&w=0&k=20&c=GJZ-jMdAfX6tSPTygB053rza-psWcDToVnGipk2Mjgs=" alt="wedding" class="img">
+        </div>
+
+        <div class="box">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.7yU760zYAoZSq3MBSmL4HgHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3" alt="wedding" class="img">
+        </div>
+
+        <div class="box">
+            <img src="https://juliarebeccaphotography.com/wp-content/uploads/2020/01/00104_Whiteface_Lodge_Lake_Placid_Wedding_Photos.jpg" alt="wedding" class="img">
+        </div>
+
+        <div class="box">
+            <img src="https://media.weddingz.in/photologue/images/christian-bride-black-and-white-bridal-photography-christian-wedding-the-bride-behind-a-veil-on-her-way-to-the-church.jpg" alt="wedding" class="img" >
+        </div>
+
+        <div class="box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.MdJEJ_FQMLvmQC-OmZw9DAHaLE?w=535&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="wedding" class="img" style="width: 300px; height: 400px;">
+        </div>
+
+        <div class="box">
+            <img src="https://www.cast83.com/files/resources/2015-newton-white-mansion-wedding-cast83-014.jpg" alt="wedding" class="img">
+        </div>
+
+        <div class="box">
+            <img src="https://www.brides.com/thmb/9mccwpwKHMYgmQt1DFnLiKfCi3c=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-d850ad3b81b94688be772aaed6fee0e0.jpg" alt="wedding" class="img">
+        </div>
+    </div>
+</body>
+</html>

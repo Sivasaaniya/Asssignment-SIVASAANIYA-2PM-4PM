@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+        }
+        .hero{
+            display: block;
+        }
+
+        .hero-nav {
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .hero-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .hero-nav ul li a {
+            text-decoration: none;
+            color: rgb(241, 223, 223);
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 2px solid grey;
+
+        }
+
+        .img {
+            width: 200px;
+            height: 300px;
+        }
+
+        @media (max-width:780px) {
+            .hero{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+        @media (max-width:780px) {
+            .box1{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <h2 style="text-align: center;">Photography</h2>
+            <nav class="hero-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="hero-main">
+                <h1>Creative Direction,<br>
+                    Design & Photography</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Quidem dicta saepe reprehenderit sapiente nisi Lorem ipsum dolor sit amet.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium modi fuga dicta!</p>
+
+            </section>
+        </main>
+
+        <footer>
+            <h4>Our Works</h4>
+            <div class="box1">
+                <div class="box">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.PgkQq8HsjaGfKfC24m_HHQHaLe?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="photo" class="img">
+                </div>
+
+                <div class="box">
+                    <img src="https://th.bing.com/th/id/R.5e87a0c2eae2fde8659b08bf1d10d3fe?rik=CKGGceBeqj78Cg&riu=http%3a%2f%2fwww.designscene.net%2fwp-content%2fuploads%2f2015%2f08%2fSpirited-Away-Sebastian-Tan-03-620x879.jpg&ehk=l%2bb1oTPt9et%2bsN1xXUwNg%2bqGvOcsQwusKtTaY%2byn62o%3d&risl=&pid=ImgRaw&r=0"
+                        alt="photo" class="img">
+                </div>
+
+                <div class="box">
+                    <img src="https://i.pinimg.com/originals/7b/a5/52/7ba552c360782345e4914549db273498.jpg" alt="photo"
+                        class="img">
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
