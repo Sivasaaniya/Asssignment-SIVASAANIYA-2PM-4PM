@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Demo</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="alertBtn">Click Me</button>
+
+<div id="box">Hover over me</div>
+
+<p>Press any key and check the console</p>
+
+<input type="text" id="textInput" placeholder="Type here">
+<p id="output"></p>
+
+<form id="myForm">
+    <input type="text" placeholder="Enter name" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    // Task 1
+    document.getElementById("alertBtn").addEventListener("click", function () {
+        alert("Button clicked!");
+    });
+
+    // Task 2
+    let box = document.getElementById("box");
+    box.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "yellow";
+    });
+    box.addEventListener("mouseout", function () {
+        box.style.backgroundColor = "lightgray";
+    });
+
+    // Task 3
+    document.addEventListener("keydown", function (event) {
+        console.log("Key pressed:", event.key);
+    });
+
+    // Task 4
+    document.getElementById("textInput").addEventListener("input", function () {
+        document.getElementById("output").textContent = this.value;
+    });
+
+    // Task 5
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Form submission prevented!");
+    });
+</script>
+
+</body>
+</html>

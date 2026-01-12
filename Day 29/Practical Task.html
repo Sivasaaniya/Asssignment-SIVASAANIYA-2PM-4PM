@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: #f8f9fa;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<!-- Task 1 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyLogo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Task 2 -->
+<section class="hero">
+  <div class="container">
+    <h1>Welcome to Our Store</h1>
+    <p class="lead">Explore our products and enjoy seamless shopping experience.</p>
+    <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+  </div>
+</section>
+
+<!-- Task 3 -->
+<section id="products" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-12">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">High-quality product for your daily needs.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">Affordable and reliable product.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">Premium product with excellent features.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Task 4-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Login</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-12">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Task 5-->
+<footer class="py-4 bg-dark text-white text-center">
+  <p class="mb-0">&copy; 2026 MyBrand. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

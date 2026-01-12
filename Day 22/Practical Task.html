@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini DOM Projects</title>
+    <style>
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        .box {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #000;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button id="darkBtn">dark Mode</button>
+
+<hr>
+
+<input type="text" id="liveInput" placeholder="Type something...">
+<p id="liveText"></p>
+
+<hr>
+
+<input type="text" id="todoInput" placeholder="Enter task">
+<button id="addBtn">add Task</button>
+<ul id="todoList"></ul>
+
+<hr>
+
+<button class="colorBtn" data-color="red">Red</button>
+<button class="colorBtn" data-color="blue">Blue</button>
+<button class="colorBtn" data-color="green">Green</button>
+
+<hr>
+
+<div id="htmlBox"></div>
+<button id="htmlBtn">Show Formatted Text</button>
+
+<script>
+    // Task 1
+    document.getElementById("darkBtn").addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+    });
+//Task 2
+    document.getElementById("liveInput").addEventListener("input", function () {
+        document.getElementById("liveText").textContent = this.value;
+    });
+    //Task 3
+    document.getElementById("addBtn").addEventListener("click", function () {
+        let task = document.getElementById("todoInput").value;
+        if (task !== "") {
+            let li = document.createElement("li");
+            li.textContent = task;
+
+            li.addEventListener("click", function () {
+                this.parentNode.removeChild(this);
+            });
+
+            document.getElementById("todoList").appendChild(li);
+            document.getElementById("todoInput").value = "";
+        }
+    });
+
+    // Task 4
+    let buttons = document.querySelectorAll(".colorBtn");
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            document.body.style.backgroundColor = this.dataset.color;
+        });
+    });
+
+    // Task 5
+    document.getElementById("htmlBtn").addEventListener("click", function () {
+        document.getElementById("htmlBox").innerHTML =
+            "<b>Bold Text</b> and <i>Italic Text</i> added dynamically!";
+    });
+</script>
+
+</body>
+</html>

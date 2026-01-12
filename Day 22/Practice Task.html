@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+<h1 id="heading">Hello World</h1>
+<button id="btn">Change Heading</button>
+
+<p class="para">This is a paragraph</p>
+
+<ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<button id="bgBtn">Change Background</button>
+
+<script>
+    // Task 1
+    document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("heading").textContent = "Heading Changed!";
+    });
+
+    // Task 2
+    document.querySelector(".para").style.color = "blue";
+
+    // Task 3
+    let list = document.getElementById("myList");
+
+    for (let i = 3; i <= 5; i++) {
+        let li = document.createElement("li");
+        li.textContent = "Item " + i;
+        list.appendChild(li);
+    }
+
+    // Task 4
+    list.removeChild(list.firstElementChild);
+
+    // Task 5
+    document.getElementById("bgBtn").addEventListener("click", function () {
+        document.body.style.backgroundColor = "lightgreen";
+    });
+</script>
+</body>
+</html>

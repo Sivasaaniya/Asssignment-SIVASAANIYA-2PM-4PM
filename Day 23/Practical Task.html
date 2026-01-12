@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Playground</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 150px;
+            background: lightblue;
+            text-align: center;
+            line-height: 150px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .parent {
+            padding: 40px;
+            background: #ddd;
+        }
+
+        .child {
+            padding: 40px;
+            background: #aaa;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>1. Mouse Event Playground</h2>
+<div id="box">Click Me</div>
+
+<h2>2. Keyboard Tracker</h2>
+<p id="keyInfo">Press any key</p>
+
+<h2>3. Live Form Preview</h2>
+<form id="previewForm">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="email" id="email">
+</form>
+
+<p><b>Preview:</b></p>
+<p id="preview"></p>
+
+<h2>4. Form Validation</h2>
+<form id="myForm">
+    Name: <input type="text" id="fname"><br><br>
+    Email: <input type="email" id="femail"><br><br>
+    <button type="submit">Submit</button>
+</form>
+<p class="error" id="errorMsg"></p>
+
+<h2>5. Event Bubbling vs Capturing</h2>
+<div class="parent" id="parent">
+    Parent
+    <div class="child" id="child">Child</div>
+</div>
+
+<script>
+    // Task 1
+    let box = document.getElementById("box");
+
+    box.addEventListener("click", () => box.style.background = "green");
+    box.addEventListener("dblclick", () => box.style.background = "red");
+    box.addEventListener("mouseover", () => box.style.background = "orange");
+
+    // Task 2
+    document.addEventListener("keydown", function (e) {
+        document.getElementById("keyInfo").textContent =
+            "Key: " + e.key + " | Code: " + e.keyCode;
+    });
+
+    // Task 3
+    let nameInput = document.getElementById("name");
+    let emailInput = document.getElementById("email");
+
+    function updatePreview() {
+        document.getElementById("preview").textContent =
+            "Name: " + nameInput.value + " | Email: " + emailInput.value;
+    }
+
+    nameInput.addEventListener("input", updatePreview);
+    emailInput.addEventListener("change", updatePreview);
+
+    // Task 4
+    document.getElementById("myForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let name = document.getElementById("fname").value;
+        let email = document.getElementById("femail").value;
+        let error = "";
+
+        if (name === "" || email === "") {
+            error = "All fields are required!";
+        } else {
+            error = "Form submitted successfully!";
+        }
+
+        document.getElementById("errorMsg").textContent = error;
+    });
+
+    // Task 5
+    document.getElementById("parent").addEventListener("click", function () {
+        console.log("Parent clicked (Bubbling)");
+    });
+
+    document.getElementById("child").addEventListener("click", function () {
+        console.log("Child clicked (Bubbling)");
+    });
+
+    document.getElementById("parent").addEventListener("click", function () {
+        console.log("Parent clicked (Capturing)");
+    }, true);
+
+    document.getElementById("child").addEventListener("click", function () {
+        console.log("Child clicked (Capturing)");
+    }, true);
+</script>
+
+</body>
+</html>
